@@ -1,6 +1,6 @@
 <div id="content">
 <div class="isi">
-<form method="post" action="<?=base_url()?>mapel/update_guru_kelas/<?php echo $id; ?>" class="f-wrap-1" id="formMapelKelas">
+<form method="post" action="<?=base_url()?>mapel/update_guru_kelas/<?php echo $id; ?>/<?php echo $kls; ?>" class="f-wrap-1" id="formMapelKelas">
 	<fieldset>		
 	<h3>Form Data Mapel Kelas</h3><a href="<?php echo base_url(); ?>mapel/guru_kelas/<?php echo $kls; ?>">Kembali</a>
 	<div id="1" class="banyak">

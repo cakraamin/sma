@@ -67,10 +67,10 @@ class Mmapel extends CI_Model{
 		return $hasil;
 	}	
 
-	private function getKodeMapelKelas($id,$dt_jenis,$id)
+	private function getKodeMapelKelas($id,$dt_jenis,$kelas)
 	{
 		$hasil = array();
-		$sql = "SELECT c.id_mapel_kelas FROM mapel a,guru_mapel b,guru_mapel_kelas c,guru d WHERE a.id_mapel=b.id_mapel AND b.id_guru_mapel=c.id_guru_mapel AND c.id_kelas='$id' AND a.jenis='$dt_jenis' AND b.nip=d.nip";			
+		$sql = "SELECT c.id_mapel_kelas FROM mapel a,guru_mapel b,guru_mapel_kelas c,guru d WHERE a.id_mapel=b.id_mapel AND b.id_guru_mapel=c.id_guru_mapel AND c.id_kelas='$kelas' AND a.jenis='$dt_jenis' AND b.nip=d.nip AND b.id_team='$id'";					
 		$kueri = $this->db->query($sql);
 		$data = $kueri->result();
 		foreach($data as $dt)
@@ -217,6 +217,37 @@ class Mmapel extends CI_Model{
 			$this->db->update('guru_mapel_kelas', $data); 		
 		}
 		$this->delGuruMapels($pecah['1']);
+	}
+
+	public function updateGuruKelasBesar($id,$team,$kelas)
+	{
+		$pecah = explode("-", $id);
+		foreach($team as $key => $dt_team)
+		{
+			if($key == 1)
+			{
+				$data = array(		  
+				   'id_guru_mapel' 	=> $dt_team->id_guru_mapel
+				);
+
+				$this->db->where('id_mapel_kelas', $id);
+				$this->db->update('guru_mapel_kelas', $data);
+				//echo "update ".$id." dan ".$dt_team->id_guru_mapel;
+			}
+			else
+			{
+				$data = array(
+				   'id_mapel_kelas' => '',
+				   'id_guru_mapel' 	=> $dt_team->id_guru_mapel,
+				   'id_kelas' 		=> $kelas,
+			   	   'id_ta'			=> $this->session->userdata('kd_ta')
+				);
+
+				$this->db->insert('guru_mapel_kelas', $data);
+				//echo "insert ".$dt_team->id_guru_mapel;
+			}
+		}
+		
 	}
 	
 	function getMapelGuru($num,$offset,$sort_by,$sort_order)

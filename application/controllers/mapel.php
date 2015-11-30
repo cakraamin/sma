@@ -124,13 +124,17 @@ class Mapel extends CI_Controller {
 		$this->load->view('template',$data);
 	}
 
-	public function update_guru_kelas($id)
+	public function update_guru_kelas($id,$kelas)
 	{
 		$pecah = explode("-", $id);
 		$Team = $this->mmapel->getDetailTeam($this->input->post('mapel',TRUE));
 		if(count($Team) < count($pecah))
 		{			
 			$this->mmapel->updateGuruKelasKecil($id,$Team);
+		}
+		elseif(count($Team) > count($pecah))
+		{
+			$this->mmapel->updateGuruKelasBesar($id,$Team,$kelas);	
 		}
 		else
 		{			
