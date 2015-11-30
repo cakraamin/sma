@@ -1,0 +1,402 @@
+
+/* THE BIG GUYS */
+* {margin:0;padding:0}
+body {padding: 0 0 20px;background: #fff url("images/body_bg.gif") repeat-x 0 100%;color:#333;font:83%/1.5 arial,tahoma,verdana,sans-serif}
+
+/* LINKS */
+a,a:link,a:link,a:link,a:hover {background:transparent;text-decoration:underline;cursor:pointer} 
+a:link {color:#c00} 
+a:visited {color:#999} 
+a:hover,a:active {color:#069} 
+
+/* FORMS */
+form {margin: 0 0 1.5em}
+input {font-family: arial,tahoma,verdana,sans-serif;margin: 2px 0}
+fieldset {border: none}
+label {display:block;padding: 5px 0}
+label br {clear:left}
+
+	/* FORMS - general classes */
+	input.f-submit {padding: 1px 3px;background:#666;color:#fff;font-weight:bold;font-size:96%;float: left;}
+	.f-submits {padding: 1px 3px;background:#666;color:#fff;font-weight:bold;font-size:96%;float: left; width:150px; text-align:center; border:solid 2px #999; margin-left:10px;}
+	.button_lap {padding: 1px 3px;background:#666;color:#fff;font-weight:bold;font-size:96%;float: left;}
+	.tombolUp{ border:solid 1px #CCC; margin:0 0 0 10px; padding:2px 5px; color:#999; font-weight:bold; background:#EEE;-moz-border-radius:5px;}
+	/* FORMS - f-wrap-1 - simple form, headings on left, form elements on right */
+	form.f-wrap-1 {width:100%;padding: .5em 0;background: #f6f6f6 url("images/featurebox_bg.gif") no-repeat 100% 100%;border-top: 1px solid #d7d7d7;position:relative}
+		form.f-wrap-1 fieldset {width:auto;margin: 0 1em}
+		form.f-wrap-1 h3 {margin:0 0 .6em;font: bold 155% arial;color:#c00}
+		form.f-wrap-1 label {clear:left;float:left;width:100%;border-top: 1px solid #fff}
+		form.f-wrap-1 label.error { margin:0 0 -20px 143px; padding:0; font-size:10px; font-style:italic;}
+		form.f-wrap-1 img.icon { margin:6px;}
+		form.f-wrap-1 .captcha { width:150px; height:30px; float:left; margin-left:143px;}
+		form.f-wrap-1 .captcha .ajax_loading { width:16px; height:11px; margin:6px auto; display:block;}
+		form.f-wrap-1 .captcha img{ margin:0; padding:0; display:block;}
+		
+		/* hide from IE mac \*/
+		form.f-wrap-1 label {float:none}
+		/* end hiding from IE5 mac */
+	
+		form.f-wrap-1 label input, form.f-wrap-1 label textarea{width:15em;float:left;margin-left:10px}
+		form.f-wrap-1 select{float:left;margin-left:10px; margin-top:-5px;}
+		form.f-wrap-1 input[type=button]{width:5em;float:left;margin-left:10px; background:#666; color:#FFF;}
+		form.f-wrap-1 input[type=checkbox]{width:5em;float:left;margin-left:10px;}
+		
+		form.f-wrap-1 label b {float:left;width:10em;line-height: 1.7;display:block;position:relative}
+		form.f-wrap-1 label b .req {color:#c00;font-size:150%;font-weight:normal;position:absolute;top:-.1em;line-height:1;left:-.4em;width:.3em;height:.3em}
+		form.f-wrap-1 div.req {color:#666;font-size:96%;font-weight:normal;position:absolute;top:.4em;right:.4em;left:auto;width:13em;text-align:right}
+		form.f-wrap-1 div.req b {color:#c00;font-size:140%}
+		
+		form.f-wrap-1 label textarea.f-comments {width: 20em}
+		form.f-wrap-1 div.f-submit-wrap {padding: 5px 0 5px 10em; clear:left;}
+		form.f-wrap-1 div.f-submit-wrap a{ padding-left:10px; color:#2A1FAA; text-decoration:none;}
+		form.f-wrap-1 div.f-submit-wrap a:hover{ text-decoration:underline;}
+		form.f-wrap-1 input.f-submit {margin: 0 0 0 10px; float:left;}
+		form.f-wrap-1 input.persen {width:50px;}
+		input.nilai {width:40px; padding:2px;}
+		.tabel_isi input{width:40px; padding:2px;}
+		.tabel_ul input{width:40px; padding:2px;}
+		.tabel_rem input{width:40px; padding:2px;}
+		input.nilais {width:30px; padding:2px;}
+		form.f-wrap-1 input.administrasi {width:400px;}
+		form.f-wrap-1 div.f-submit-wrap p{ padding:0; margin:0;}
+		form.f-wrap-1 div.f-submit-wrap div.status{ margin:20px 0 0 0;}
+		form.f-wrap-1 div.f-submit-wrap div.status div.ajax_loading{ margin:-13px 0 0 0;}
+		form.f-wrap-1 div.f-submit-wrap div.status div.ajax_loading img{ margin-left:20px;}
+		form.f-wrap-1 div.f-submit-wrap div.status p{ margin:-6px 0 0 50px; font-weight:bold;}
+		
+		form.f-wrap-1 fieldset.f-checkbox-wrap, form.f-wrap-1 fieldset.f-radio-wrap {clear:left;float:left;width:32em;border:none;margin:0;padding-bottom:.7em}
+		form.f-wrap-1 fieldset.f-checkbox-wrap b, form.f-wrap-1 fieldset.f-radio-wrap b {float:left;width:8em;line-height: 1.7;display:block;position:relative;padding-top:.3em}
+		form.f-wrap-1 fieldset.f-checkbox-wrap fieldset, form.f-wrap-1 fieldset.f-radio-wrap fieldset {float:left;width:13em;margin: 3px 0 0 35px}
+		form.f-wrap-1 fieldset.f-checkbox-wrap label, form.f-wrap-1 fieldset.f-radio-wrap label {float:left;width:13em;border:none;margin:0;padding:2px 0;margin-right:-3px}
+		form.f-wrap-1 label input.f-checkbox, form.f-wrap-1 label input.f-radio {width:auto;float:none;margin:0;padding:0}
+		
+		form.f-wrap-1 label span.errormsg {position:absolute;top:0;right:-10em;left:auto;display:block;width:16em;background: transparent url(images/errormsg_bg.gif) no-repeat 0 0}
+		form.f-wrap-1 label span.errormsg b {padding: 10px 0;margin: 0 10px 0 30px;color:#B30800;font-weight:bold;display:block;width:auto;float:none;line-height:1.3}
+
+/* TYPOGRAPHY */
+p, ul, ol {margin: 0 0 1.5em}
+h1, h2, h3, h4, h6 {letter-spacing: -1px;font-family: arial,verdana,sans-serif;margin: 1.2em 0 .3em;color:#000;border-bottom: 1px solid #eee;padding-bottom: .1em}
+h5{letter-spacing: -1px;font-family: arial,verdana,sans-serif;margin: 1.2em 0 .3em;color:#000;padding-bottom: .1em}
+h1 {font-size: 196%;margin-top:.6em}
+h2 {font-size: 136%}
+h3 {font-size: 126%}
+h4 {font-size: 116%}
+h5 {font-size: 106%}
+h6 {font-size: 96%}
+.highlight {color:#E17000}
+.subdued {color:#999}
+.error {color:#c00;font-weight:bold}
+.success {color:#390;font-weight:bold}
+.caption {color:#999;font-size:11px}
+.date {font: bold 82% arial;color:#bbb;display:block;letter-spacing: 1px}
+small {font-size:11px}
+
+/* LISTS */
+ul {margin: .3em 0 1.5em 0;list-style-type:none}
+	ul.related {margin-top: -1em}
+ol {margin: .5em .5em 1.5em}
+ol li {margin-left: 1.4em;padding-left: 0;background: none; list-style-type: decimal}
+li {line-height: 1.4em;padding-left: 25px;background: transparent url("images/sprites.gif") no-repeat 0 0}
+li.doc {background-position: 3px -500px}
+ul.nomarker li {background:none;padding-left:0}
+
+dl {margin: 0 0 1em 0}
+dt {font-weight:bold;margin-top: 1.3em}
+dl dl {margin: 0 0 1.5em 30px}
+
+/* GENERAL */
+img {border:none} 
+hr {margin: 1em 0;background:#f2f2f2;height:1px;color:#f2f2f2;border:none;clear:both}
+.clear {clear:both;position:relative;font-size:0px;height:0px;line-height:0px} 
+
+/* LAYOUT - HEADER */
+#header {background: #666 url("images/sprites.gif") repeat-x 0 100%;margin: 0 0 25px;padding: 0 0 8px}
+
+	#header #site-name {font: 265% arial;letter-spacing: -.05em;margin:0 0 0 40px;padding:3px 0;color:#ccc;border:none}
+	
+	/* NAV - top horizontal nav */
+	#nav, #nav ul {padding: 0;margin: 0;list-style: none}
+	#nav {font-weight:bold;height:2.09em;font: bold 96% arial;margin: 0 105px 0 40px}
+	#nav li {position:relative;background: #999;float: left;width: 10em;display:block;margin: 0;border-bottom: 3px solid #666;border-right: 3px solid #252525;padding:0}
+	#nav a, #nav a:link, #nav a:visited, #nav a:hover, #nav a:active {text-decoration:none;cursor:pointer;color:#fff;display: block;padding: 4px 10px 2px}
+	#nav a:hover {color:#000}
+	
+	#nav li ul {border-left: 1px solid #c00;background: #f6f6f6 url("images/featurebox_bg.gif") no-repeat 100% 100%;width:15.8em;font-size:90%;margin-top:3px;position: absolute;font-weight:normal;left: -999em}
+	#nav li:hover ul, #nav li.sfhover ul {left: 0;z-index:99999}
+	
+	#nav li li {background:none;float:none;border:none;border: 1px solid #999;border-top:1px solid #fff;border-right:none;border-left:none;padding-left:0}
+	#nav li li.last {border-bottom:none}
+	#nav li li a, #nav li li a:link, #nav li li a:visited, #nav li li a:hover {color:#000;padding: 3px 10px 2px;width:14em}
+	#nav li li a:hover {color:#fff;background:#c00}
+	
+	#nav li.active {background: #c00;border-bottom: 3px solid #c00}
+	#nav li.active ul {border:none;background: #c00 url("images/featurebox2_bg.gif") no-repeat 100% 100%}
+	#nav li.active a:link, #nav li.active a:visited, #nav li.active a:hover, #nav li.active a:active {}
+	#nav li.active a:hover {color:#000}
+	
+	#nav li.active li {border:none;border-top: 1px solid #c15c5c;border-bottom: 1px solid #870000}
+	#nav li.active li.last {border-bottom: none}
+	#nav li.active li a:link, #nav li.active li a:visited, #nav li.active li a:hover, #nav li.active li a:active {color:#fff}
+	#nav li.active li a:hover {background: #666 url("images/sprites.gif") repeat-x 0 99%;color:#fff}
+	
+	#nav li.active li.active a:link, #nav li.active li.active a:visited, #nav li.active li.active a:hover, #nav li.active li.active a:active {color:#fff;font-weight:bold;background: #666 url("images/sprites.gif") repeat-x 0 99%}
+
+	/* hide from IE mac \*/
+	#nav li {width:auto}
+	/* end hiding from IE5 mac */
+	
+	/* SEARCH */
+	#search {color:#fff;font-weight:bold;position:absolute;top:10px;right:110px;left:auto;width:18em}
+	#search form {margin:0}
+	#search input {width:8em;margin: 0 0 -1px;height:1.2em}
+	#search label {padding:5px 0 0;display:inline}
+	#search input.f-submit {width:auto;font-size:81%;margin:0 0 -.15em;height:1.95em}
+	
+	/* POWERED BY - mollio logo in this case */
+	#poweredby {width:96px;height:63px;position:absolute;top:-102px;right:0}
+
+/* LAYOUT - main body of page */
+#wrap {min-width:770px;max-width:1200px;margin: 0 auto;position:relative}
+#content-wrap {position:relative;width:100%}
+	#utility {position:absolute;top:0;left:25px;width:165px;border-top: 5px solid #999;padding-bottom: 40px}
+	#sidebar {position:absolute;top:0;right:25px;width:20%;border-top: 5px solid #999;padding-top: 1px;padding-bottom: 40px}
+
+#content {margin: 0 50px}
+	#content p.notice{ border:2px solid #FFAEAE; padding:10px 10px 15px 50px; background:url('../images/error.png') no-repeat #FEEBEB;}
+	#content p.info{ border:2px solid #0066FF; padding:10px 10px 15px 50px; background:url('../images/info.png') no-repeat #99CCFF; background-size: 45px 45px;}
+	/*#content p.caution{ border:2px dashed #FFAEAE; background:#FEEBEB; padding:10px;}*/
+	#content p.succes{border:2px solid #BBDF8D; padding:10px 10px 15px 50px; background:url('../images/ok.png') no-repeat #EAF7D9;}
+	#content .notice a{ text-decoration:none; border:solid 1px #CCC; background:#EEE; padding:2px 5px; color:#000;}
+	#content .notice a:hover{ color:#999;}
+	#content .toolbar{padding:0; margin:0 0 10px 0;}
+	#content .toolbar img{ width:25px; border:none; margin-right:10px;}
+	#content #breadcrumb {margin-top:-5px;font-size:93%;font-weight:bold}
+	#content #breadcrumb a:link, #content #breadcrumb a:visited {text-decoration:none}
+	#content #breadcrumb a:hover, #content #breadcrumb a:active {text-decoration:underline}
+	#content ul.tab{ background:none; list-style:none; display:inline;}
+	#content ul.tab li{ background:none; list-style:none; display:inline;}
+	#content ul.tab li a{ text-decoration:none; color:#000; border:solid 1px #CCC; padding:5px 20px; float:left; margin-right:5px; background:#CCC; color:#FFF; font-weight:bold;}
+	#content ul.tab li a.current{ text-decoration:none; color:#000; padding:5px 20px 6px 20px; float:left; margin-right:5px; background:#FFF; border-top:solid 1px #CCC; border-left:solid 1px #CCC; border-right:solid 1px #CCC;border-bottom:solid 1px #FFF; z-index:12; color:#CCC; font-weight:bold; }
+	#content .isi_tab{ border-top:solid 1px #CCC; padding:5px 0 0 0; margin:10px 0 0 0; z-index:1;}
+	#content .isi_tab .ajax_loading img{ margin:0 auto;}
+	#content .isi_tab .ajax_loading img{ margin:0 auto;}
+	
+	#content .isi_tabel{ margin: 0; padding: 0;}
+	#content .isi_tabel img{ display: block; margin: 0 auto;}	
+	
+	.featurebox {color:#333;padding: 15px 20px 20px;border-top: 1px solid #d7d7d7;margin: 0 0 1.5em;background: #f6f6f6 url("images/featurebox_bg.gif") no-repeat 100% 100%}
+	.featurebox p, .featurebox h1, .featurebox h2, .featurebox h3, .featurebox h4, .featurebox h5, .featurebox h6 {margin: 0 0 .3em;border-bottom: 1px solid #c00;color:#c00}
+	.featurebox p {border:none;margin: 0 0 1em;color:#444}
+	.featurebox a {font-weight:bold}
+
+	.thumbnail {margin: 0 0 0 10px;position:relative;z-index:9999;border: 1px solid #eee;float:right;width:100px;padding:5px;background:#fff}
+	.thumbnail img {border: 1px solid #000}
+	
+	.pagination {background: #f2f2f2;color:#666;padding: 4px 2px 4px 7px;border: 1px solid #ddd;margin: 0 0 1.5em}
+	.cari {color:#666;padding: 4px 2px 4px 7px; margin: 0 0 1.5em}
+	.cari form{ display:block;}
+	.cari input[type=submit]{ margin-top:4px;}
+	.cari label{ float:left;}
+	.pagination p {position:relative;text-align:right}
+	.pagination p a:link{text-decoration:none;background:#fff;padding:2px 5px;border: 1px solid #ccc;}
+	.pagination p a:hover {background:#c00;color:#fff}
+	.pagination p span {text-decoration:none;background:#fff;padding:2px 5px;border: 1px solid #ccc;color:#ccc}
+	.pagination * {margin:0}
+	.pagination h4 {margin-top:-1.45em;padding:0;border:none}
+	
+	#resultslist-wrap {margin: 0 0 1.5em;font-size:92%}
+	#resultslist-wrap dt, #resultslist-wrap dl {margin: 0}
+	#resultslist-wrap dt {font: bold 85% arial;padding: 3px 0}
+	#resultslist-wrap li {padding: 0 0 1em;margin:0 0 0 1.2em;font: bold 145% arial}
+	#resultslist-wrap li dd {font: normal 73% arial}
+	#resultslist-wrap li dl {margin:0}
+	#resultslist-wrap dd {line-height:1.3}
+	#resultslist-wrap dd.filetype, #resultslist-wrap dd.date {color:#999;display:inline;padding-right:.5em}
+	
+	/* TABLES */
+	.table1 {border: 2px solid #900;border-collapse:collapse;width:100%}
+		.table1 td {background: #fff url("images/sprites.gif") repeat-x 0 -1600px;padding:3px;border: 1px solid #fff}
+		.table1 th {text-align:center;border: 1px solid #fff}
+		.table1 th a{ color:#FFF; text-decoration:underline;}
+		.table1 td a img{ width:20px; display:block; margin:0 auto;}
+		.table1 th a:hover{ text-decoration:none;}
+		.table1 thead th {color:#fff;font-size:145%;background: #900 url("images/sprites.gif") repeat-x 0 -1300px;padding: 10px 6px}
+		.table1 tbody th {color:#fff;font-size:115%;background: #88b8db url("images/sprites.gif") repeat-x 0 -1400px;padding: 6px}
+		.table1 tbody th.sub {font-size:100%;color:#000;background: #efefef url("images/sprites.gif") repeat-x 0 -1500px;padding: 6px}
+		.table1 input[type=checkbox] { margin:0 auto; display:block;}
+		.table1 tr.ganjil td{ background:#EEE;}
+		.table1 tr.genap td{ background:#FFF;}
+		.table1 tr.hight td{ background:#F1BABA;}
+		
+	.border {border: 10px solid #900;border-collapse:collapse;width:80%; -moz-border-radius:10px; padding:5px; margin-bottom:10px; font-family:"Courier New", Courier, monospace;}
+	.kartu {border:none;border-collapse:collapse;width:100%;}
+		.kartu td {background: #fff url("images/sprites.gif") repeat-x 0 -1600px;padding:3px;border: 1px solid #fff}
+		.kartu td img{ border:solid 1px #CCC; padding:5px;}
+	.formTabel {border:none;border-collapse:collapse;width:150%;}
+		.formTabel td {background: #fff url("images/sprites.gif") repeat-x 0 -1600px;padding:3px;border: 1px solid #fff}
+		.formTabel td img{ border:solid 1px #CCC; padding:5px;}
+
+	/* TABLES - calendar */
+	.calendar {width:200px;font-size:92%}
+		.calendar td {text-align:center;border: 1px solid #ddd}
+		.calendar th {text-align:center}
+		.calendar thead th {padding: 3px 2px}
+		.calendar tbody th {padding: 2px}
+		.calendar tbody th.sub {padding: 2px}
+		
+	/* 'MORE' LINK - provides an accessible alternative to just using 'more' as a link at the end of paragraphs */
+		a.morelink:link, a.morelink:visited, a.morelink:hover, a.morelink:active {background: transparent url("images/sprites.gif") no-repeat 5px -500px;padding-left:21px}
+		a.morelink:hover {background: transparent url("images/sprites.gif") 5px -400px}
+		.morelink span {position:absolute;left:-9999px;width:900px}
+		
+	/* CODE - formatting for code inserted into body - more here: http://dizque.lacalabaza.net/temp/lipt/ */
+		ol.code {font-family: monospace;position:relative}
+		ol.code li {color: #666;margin-bottom: 1px}
+		ol.code code {color: #000;display: block}
+		ol.code .cmt {color: #4077d2}
+		li.tab0 code {padding-left: 4em}
+		li.tab1 code {padding-left: 8em}
+		li.tab2 code {padding-left: 12em}
+		li.tab3 code {padding-left: 16em}
+		li.tab4 code {padding-left: 20em}
+		li.tab5 code {padding-left: 24em}
+		ol.code li  {background: #f3f3f3 url("images/td_bg.gif") no-repeat 100% 100%}
+		p.note {margin: 1em;border: 1px solid #ddd;background: #f0f0f0;padding: 1em}
+
+/* LAYOUT TYPE B */
+	#type-b #content-wrap {background: transparent url("images/content_wrap_bg.gif") repeat-y 30px 0}
+	#type-b #content {margin: 0 23px 0 235px}
+
+/* LAYOUT TYPE C */
+	#type-c #content-wrap {background: transparent url("images/content_wrap_bg.gif") repeat-y 30px 0}
+	#type-c #content {margin: 0 25% 0 235px}
+
+/* LAYOUT TYPE D */
+	#type-d #content {margin: 0 25% 0 50px}
+
+/* LAYOUT TYPE E */
+	#type-e #content-wrap {background: transparent url("images/content_wrap_e_bg.gif") repeat-y 100% 0}
+	#type-e #utility {position:absolute;top:0;left:auto;right:25px;width:165px;border-top: 5px solid #999}
+	#type-e #content {margin: 0 243px 0 50px}
+
+/* LAYOUT TYPE F */
+	#type-f #content-wrap {background: transparent url("images/content_wrap_e_bg.gif") repeat-y 100% 0}
+	#type-f #content {margin: 0 235px 0 25%}
+		#type-f #utility {left:auto;right:25px}
+		#type-f #sidebar {right:auto;left:25px}
+
+/* SECONDARY NAVIGATION - vertical navigation */
+	#nav-secondary, #nav-secondary ul {position:static}
+	#nav-secondary, #nav-secondary li {list-style: none;margin:0;padding:0;background:#fff}
+	#nav-secondary {padding-top:0;border-top: 1px solid #ccc;margin-top: 1px}
+	#nav-secondary a {line-height:1.8;padding: 5px 0 5px 23px;background: #fff url("images/sprites.gif") no-repeat 10px -695px;font: bold 86% arial;display:block}
+	#nav-secondary a, #nav-secondary a:link, #nav-secondary a:visited, #nav-secondary a:hover, #nav-secondary a:active {text-decoration:none;cursor:pointer} 
+	#nav-secondary a:link {color:#000} 
+	#nav-secondary a:visited {color:#000} 
+	#nav-secondary a:hover {color:#c00;background: #fee url("images/sprites.gif") no-repeat 10px -695px}
+	#nav-secondary a.active {color:#c00;} 
+	#nav-secondary li.active a:link, #nav-secondary li.active a:visited, #nav-secondary li.active a:hover, #nav-secondary li.active a:active {color:#c00} 
+	#nav-secondary li {border-top: 1px solid #fff;border-bottom: 1px solid #ccc}
+
+/* SECONDARY NAVIGATION - 2nd TIER */
+	#nav-secondary ul {margin: 0 0 1em 23px;padding:0}
+	#nav-secondary li.active li a, #nav-secondary li.active li a:link, #nav-secondary li.active li a:visited {line-height:1.5;background: #fff url("images/sprites.gif") no-repeat 0 -798px;padding:0 0 0 12px;font-weight:normal;width:auto;color:#000;width:130px;display:block}
+	#nav-secondary li.active li a:hover, #nav-secondary li.active li a:active {color: #c00}
+	#nav-secondary li.active li {border: none;margin:0}
+	
+	#nav-secondary li.active li.active a:link, 
+	#nav-secondary li.active li.active a:visited, 
+	#nav-secondary li.active li.active a:hover, 
+	#nav-secondary li.active li.active a:active {font-weight:bold}
+
+/* SECONDARY NAVIGATION - 3rd TIER */
+	#nav-secondary ul ul {margin: 0 0 1em 13px;padding:0}
+	#nav-secondary li.active li.active li a, #nav-secondary li.active li.active li a:link, #nav-secondary li.active li.active li a:visited {width:117px}
+	#nav-secondary li.active li.active li a:link, 
+	#nav-secondary li.active li.active li a:visited, 
+	#nav-secondary li.active li.active li a:hover, 
+	#nav-secondary li.active li.active li a:active {font-weight:normal}
+	#nav-secondary li.active li.active li.active a:link, 
+	#nav-secondary li.active li.active li.active a:visited, 
+	#nav-secondary li.active li.active li.active a:hover, 
+	#nav-secondary li.active li.active li.active a:active {font-weight:bold}
+
+/* SECONDARY NAVIGATION - 4th TIER */
+	#nav-secondary ul ul ul {margin: 0 0 1em 13px;padding:0}
+	#nav-secondary li.active li.active li.active li a, #nav-secondary li.active li.active li.active li a:link, #nav-secondary li.active li.active li.active li a:visited {width:104px}
+	#nav-secondary li.active li.active li.active li a:link, 
+	#nav-secondary li.active li.active li.active li a:visited, 
+	#nav-secondary li.active li.active li.active li a:hover, 
+	#nav-secondary li.active li.active li.active li a:active {font-weight:normal}
+	#nav-secondary li.active li.active li.active li.active a:link, 
+	#nav-secondary li.active li.active li.active li.active a:visited, 
+	#nav-secondary li.active li.active li.active li.active a:hover, 
+	#nav-secondary li.active li.active li.active li.active a:active {font-weight:bold}
+
+/* LAYOUT - FOOTER */
+#footer {clear:both;border-top: 1px solid #E3E8EE;padding: 10px 0 30px;font-size:86%;color:#999}
+	#footer p {margin:0}
+	#footer a:link {color:#999}
+	
+/*************Pop Up************/
+#popup_container {font-family:'Lucida Grande',arial;font-weight:bold;text-align:left;font-size: 12px;width: 364px; height: 86px; background: #F3F3F3;border:solid 1px #dedede;border-bottom: solid 2px #456FA5;color: #000;}
+#popup_title {display:none;}
+#popup_message {padding-top: 15px;padding-left: 15px;}
+#popup_panel {text-align: left;padding-left:15px;}
+#popup_container input{background-color:#CC0000;padding:3px;color:#FFFFFF;margin-top:20px;margin-right:10px;}
+
+.boxy-wrapper { position: absolute; }
+.boxy-wrapper.fixed { position: fixed; }
+
+  /* Modal */
+  
+  .boxy-modal-blackout { position: absolute; background-color: black; left: 0; top: 0; }
+  
+  /* Border */
+
+  .boxy-wrapper { empty-cells: show; }
+	.boxy-wrapper .top-left,
+	.boxy-wrapper .top-right,
+	.boxy-wrapper .bottom-right,
+	.boxy-wrapper .bottom-left { width: 10px; height: 10px; padding: 0 }
+	
+	.boxy-wrapper .top-left { background: url('../images/boxy-nw.png'); }
+	.boxy-wrapper .top-right { background: url('../images/boxy-ne.png'); }
+	.boxy-wrapper .bottom-right { background: url('../images/boxy-se.png'); }
+	.boxy-wrapper .bottom-left { background: url('../images/boxy-sw.png'); }
+	
+	/* IE6+7 hacks for the border. IE7 should support this natively but fails in conjuction with modal blackout bg. */
+	/* NB: these must be absolute paths or URLs to your images */
+	.boxy-wrapper .top-left { #background: none; #filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/boxy-nw.png'); }
+	.boxy-wrapper .top-right { #background: none; #filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/boxy-ne.png'); }
+	.boxy-wrapper .bottom-right { #background: none; #filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/boxy-se.png'); }
+	.boxy-wrapper .bottom-left { #background: none; #filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/boxy-sw.png'); }
+	
+	.boxy-wrapper .top,
+	.boxy-wrapper .bottom { height: 10px; background-color: black; opacity: 0.6; filter: alpha(opacity=60); padding: 0 }
+	
+	.boxy-wrapper .left,
+	.boxy-wrapper .right { width: 10px; background-color: black; opacity: 0.6; filter: alpha(opacity=60); padding: 0 }
+	
+	/* Title bar */
+	
+	.boxy-wrapper .title-bar { background-color: black; padding: 6px; position: relative; }
+	  .boxy-wrapper .title-bar.dragging { cursor: move; }
+	  .boxy-wrapper .title-bar h2 { font-size: 12px; color: white; line-height: 1; margin: 0; padding: 0; font-weight: normal; }
+	  .boxy-wrapper .title-bar .close { color: white; position: absolute; top: 6px; right: 6px; font-size: 90%; line-height: 1; }
+		
+	/* Content Region */
+	
+	.boxy-inner { background-color: white; padding: 0 }
+	.boxy-content { padding: 15px; }
+	
+	/* Question Boxes */
+
+    .boxy-wrapper .question { width: 350px; min-height: 80px; }
+    .boxy-wrapper .answers { text-align: right; }
+#gambar{ margin:0 0 0 10px;}
+
+.next{display:block; float:right; background: transparent url(../images/next.png) no-repeat 0 0; width:15px; height:10px; background-size: 10px 10px; text-decoration: none; padding-top: 8px; background-position: 1% 65%; }
+.next:hover{display:block; float:right; background: transparent url(../images/next.png) no-repeat 0 0; width:15px; height:10px; background-size: 10px 10px; text-decoration: none; padding-top: 8px; background-position: 1% 65%; }
+.simpanje{display:block; float:right; background: transparent url(../images/diskette.png) no-repeat 0 0; width:15px; height:15px; background-size: 21px 21px; text-decoration: none; padding-top: 8px; margin-right: 10px; background-position: 60% 20%;}
+.simpanje:hover{display:block; float:right; background: transparent url(../images/diskette.png) no-repeat 0 0; width:15px; height:15px; background-size: 21px 21px; text-decoration: none; padding-top: 8px; margin-right: 10px; background-position: 60% 20%;}

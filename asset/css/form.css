@@ -1,0 +1,40 @@
+
+/* THE BIG GUYS */
+* {margin:0;padding:0}
+body {padding: 0 0 20px; color:#333;font:83%/1.5 arial,tahoma,verdana,sans-serif}
+
+/* LINKS */
+a,a:link,a:link,a:link,a:hover {background:transparent;text-decoration:underline;cursor:pointer} 
+a:link {color:#c00} 
+a:visited {color:#999} 
+a:hover,a:active {color:#069} 
+
+/* FORMS */
+form {margin: 0 0 1.5em}
+input {font-family: arial,tahoma,verdana,sans-serif;margin: 2px 0}
+fieldset {border: none}
+label {display:block;padding: 5px 0}
+label br {clear:left}
+	
+#wrap{ width:500px; display:block; margin:20px auto; -moz-border-radius:5px; padding:0; height:470px;}
+	#wrap form{ margin:0; padding:0;}
+	#wrap form label.error{ color:#FF0000; text-align:center; font-style:italic; font-weight:bold; font-size:9px;}
+	#wrap form input[type=text]{ border:solid 1px #999; display:block; margin:0 auto; -moz-border-radius:5px; width:250px; height:30px; font-size:24px; padding:3px;}
+	#wrap h3{ text-align:center; margin-top:115px; color:#000; font-weight:bold;}
+	#wrap { background: url(../images/2021467611.png) no-repeat; z-index:1; background-position:120px 110px;}
+	#wrap h2{ text-align:center; color:#000; font-weight:bold; background:url(../images/Barcode-icon.png) no-repeat; height:40px; z-index:1; background-position:110px -1px; margin-left:25px;}
+	#wrap h2 a{ color:#000; text-decoration:none;}
+	
+	#clock {position: relative;width: 200px;height: 200px;margin:0 auto 0 250px;background: url(../images/clockface.gif);list-style: none;}
+    #sec, #min, #hour {position: absolute;width: 10px;height: 200px;top: 0px;left: 94px;}
+    #sec {background: url(../images/sechand.png);z-index: 4;} 
+    #min {background: url(../images/minhand.png);z-index: 3;}      
+    #hour {background: url(../images/hourhand.png);z-index: 2;}
+    p {text-align: center; padding: 10px 0 0 0;}
+	p.aktif { font-weight:bold; color:#000;}
+	p.inaktif { color:#FF0000; font-weight:bold;}
+#informasi{ display:block; margin:0 auto; width:300px;}
+	#informasi p.notice{ border:2px solid #FFAEAE; background:#FEEBEB; padding:10px;}
+.formTabel {border:none;border-collapse:collapse;}
+	.formTabel td {background: #fff url("images/sprites.gif") repeat-x 0 -1600px;padding:3px;border: 1px solid #fff}
+	.formTabel td img{ border:solid 1px #CCC; padding:5px;}
