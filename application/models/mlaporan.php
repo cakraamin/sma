@@ -1258,5 +1258,13 @@ class Mlaporan extends CI_Model{
 
 		return $ket;
 	}
+
+	function getNamaAgama($id)
+	{
+		$kueri = $this->db->query("SELECT * FROM agama WHERE id_agama='$id'");
+		$data = $kueri->row();
+		$nilai = (isset($data->agama))?$data->agama:"";
+		return $nilai;
+	}
 }
 ?>
